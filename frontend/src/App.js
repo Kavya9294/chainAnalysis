@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import CurrencyCard from './CurrencyCard';
 import {Card} from 'antd';
+require('dotenv').config();
 
 function App() {
   return (

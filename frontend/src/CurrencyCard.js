@@ -20,7 +20,8 @@ class CurrencyCard extends React.Component {
           };
 
     componentDidMount() {
-        const req = new Request("http://localhost:8080/getCurrency?currencyType="+this.props.type, {
+        const url = process.env.REACT_APP_API_URL;
+        const req = new Request(url+"/getCurrency?currencyType="+this.props.type, {
             method: 'GET',
             cache: 'default'
           });
